@@ -1,0 +1,7 @@
+All analyses were conducted using Python (version 3.12) with openly available scientific computing libraries. Signal processing was performed using the WFDB toolbox, and machine learning metrics were computed with scikit-learn.
+
+To ensure full reproducibility, all scripts used in this study are publicly accessible in a dedicated repository (GitHub link), together with dependency specifications. The PTB-XL dataset was obtained from PhysioNet under its original licensing terms and was not redistributed.
+
+ECG recordings were transformed into fixed-length spectral representations using a fast Fourier transform applied to a single lead (Lead II), selected for its stability and common clinical use. Spectral vectors were normalized to mitigate amplitude-related variability.
+
+Patient-level structure was quantified through pairwise cosine similarity comparisons between recordings originating from the same individual versus different individuals. Discriminative capacity was evaluated using AUROC and AUPRC across multiple random seeds to verify robustness.
